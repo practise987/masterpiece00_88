@@ -3,4 +3,8 @@
 3. how to install maven?
 4. prerequesites
 5. do you have any aware of other build tools
+6. how you will check the version of maven and ant and java
+7. what is ant ?
+8. write the ant script to delete a folders and to create a file called "<name.txt>"
+9.  differences between manual compilation / ant
 
