@@ -1,0 +1,6 @@
+1. what is mavane?
+2. why maven?
+3. how to install maven?
+4. prerequesites
+5. do you have any aware of other build tools
+
