@@ -8,3 +8,16 @@
 8. write the ant script to delete a folders and to create a file called "<name.txt>"
 9.  differences between manual compilation / ant
 
+class 2
+
+1. what is plugin
+2. what is goal
+3. what is groupId
+4. what is artifact Id
+5. what is Version
+6. Pom.xml
+7. What is the (basic)folder structure of maven?
+8. command to create the folder structure
+9. Difference between ant and maven
+
+
