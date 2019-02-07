@@ -1,0 +1,112 @@
+1.what is maven?
+sol:  maven is a build automation tool,and it is a advanced tool for ant. compiling the sources ,creating the packages and deploying artifacts into maven repository ,these all maven will do automatically.and it works based on pom(project object model).and it is used for java projects.
+
+
+2.why maven?
+sol: In maven,we no need to create folders and writing scripts, anything manually, it will only create its own folder structure  and writing scripts and all  automatically.
+
+
+3.How to install maven?
+sol:
+    pre-requisites:
+                    java and maven
+    
+
+step1: first we need to install jdk and we have to export java_home path.
+
+step2: go to  maven  downloads ,and  click on 'download apache maven'
+there it will show file links.
+for windows ,we have to go for zip file ,for linux we have to go for tar.gz file.
+
+step3.click on apache-maven-3.6.0-bin-tar.gz, and click on 'save file'
+it will download
+
+step4: after downloading file ,we have to extract it using the following command,
+     tar-xvf  apache-maven-3.6.0-bin-tar.gz
+it will extract all files
+
+step5:we need to export maven path in .bashrc file .and edit that bashrc file and in that we have mention like this,
+
+        export M2_HOME=/home/sravani/softwares/apache-maven-3.6.0
+        export PATH=$M2_HOME/bin:$PATH
+
+step 6: then installation is completes,and then u can check the version of maven using this command,
+          mvn -version,it  will show 
+           maven-version,jdk-version,linux versions.
+
+
+4.Do you have any aware of other build tools?
+sol: yes, we have other build tools like ANT,GRADLE
+
+
+5.How will u check the versions of maven,ant, and java?
+sol: to check the versions ,we will use following commands,
+
+     maven -----> mvn -version
+     ant  -------> ant -version
+     java -------->java -version
+
+
+6.what is ANT?
+sol: ANT is a build automation tool, if you wanted to compile any scripts,we have to write script name called 'build.xml'.and ant has its own folder structure,we have to mention what structure  we wants .and it is used for java and non java applications .
+
+
+7.write ant script to create and delete a folder & to create a file name called '<name.txt>'?
+ sol:  we will write ant script in build.xml file
+  the script is,
+
+   project>
+    
+      <target name="create">
+          <mkdir dir="test"/>
+      </target>
+
+      <target name="clean">
+         <delete dir="test"/>
+      </target>
+
+      <target name="file">
+         <touch file="sravs.txt"/>
+      </target>
+
+</project>
+
+
+8.differences between manual compilation and ant?
+sol: in manual compilation,
+      we just need to write one command i.e,
+          javac filename.java
+
+
+ in ant,
+   --> if you wanted to compile anything,we have to write script name called build.xml
+  -->in that build.xml ,we have to mention the folder structure of files
+ ---> to write  a script,we have three stages,we have to follow like this,
+  
+ <project>
+       <target name="">
+           <tasks>
+           </tasks>   
+        </target>
+ </project>      
+
+
+----> in target we need to mention name of the target
+----->in tasks we have to write script
+-----> after writing script,we need to close tags
+
+and finally save that file and execute the command like this,
+  
+   ant target name-- target name means name of the target which you have mentioned in build.xml.
+
+       
+
+
+
+
+
+
+
+
+
+
