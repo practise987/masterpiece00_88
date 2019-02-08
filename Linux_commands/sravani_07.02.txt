@@ -1,0 +1,26 @@
+
+  1.find:
+
+        find is used to find files in u r directory or system
+
+        find . -name "filename"--to search in a current directory
+        find 'path' -name "filename"--> to search in a system
+
+
+  2.grep: grep is used to search for a string in a file.
+
+         grep "string" filename
+         grep -i "string" filename --> in case of ignorecase
+         grep -i "string" * -->to search the string in all files
+         grep -w  "string" * ---> to search  for a exact string in all files
+         
+  3.wordcount(wc): used to count the no of lines,words, and characters in a file.
+       
+       wc [-l][-w][-c] filename
+        
+     here , [-l] --> prints no of lines
+            [-w] ---> prints no of words
+            [-c] ---> prints no of characters
+
+
+    ---> if no options provided also wc prints all these three..
