@@ -1,0 +1,89 @@
+﻿1.what is plugin?
+sol: In maven 'archetype' is a plugin
+
+2.what is goal?
+sol: In maven 'generate' is a goal
+
+3.what is groupId?
+sol: groupId  is nothing but a url of your project, and it always be in a reverse order
+ ex:com.flipkart.www
+ 
+4.what is artifactId?
+sol: artifactId  is the name of your project
+
+5.what is version?
+sol: version is nothing but release of your project. for first release the version  will be like this,
+        -Dversion=1.0-SNAPSHOT  --1.0 means first release
+
+6.pom.xml?
+
+sol:for every project, while creating folder structure maven will generate one script file   called  pom.xml . and it contains the information about the project and configuration details. the pom.xml file will looks like this,
+  
+ex:
+
+<project>
+     
+      <modelversion>4.0.0</modelversion>
+      <groupId>com.geestract00</groupId>
+      <artifactId>onlineshopping</artifactId>
+       <packaging>jar</packaging>
+       <version>1.0-SNAPSHOT</version>
+       <name>onlineshopping</name>
+       <url>http://maven.apache.org</url>
+      <dependencies>
+           <dependency>
+               <groupId>junit</groupId>
+               <artifactId>junit</artifactId>
+               <version>3.8.1</version>
+               <scope>test</test>
+            <dependency>
+      </dependencies>
+
+</project>
+
+-->when executing the goal,first maven reads the pom.xml file and gets the needed configuration information then executes the goal.  
+    
+ 
+          
+
+7.what is the (basic) folder structure of maven?
+Sol: for each application the folder structure will be different.
+     For standalone application applications,the folder structure looks like this,
+
+
+    onlineshopping--- 1.pom.xml
+                      2.src---1.main--java--com--geestract00--app.java
+                               2.test--java--com--geestract00--apptest.java
+      
+--> here onlineshopping is artifactId and geestract00 is groupId.
+                
+8.command to create the folder structure?
+sol: mvn archetype:generate -DgroupId= url of project -DartifactId=name of project -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
+
+----> here if we didn't mentioned  '-DinteractiveMode=false' this one,it will ask some questions like groupId,artifactId,version  to proceed or not.
+so,if you   want to create a folder structure with the mentioned specifications without asking these questions,we have to mention the 'interactiveMode=false'
+ 
+
+9.differences between maven and ant?
+sol:
+  ----> in maven
+      -->we no need to create any folderstructures manually, it will create automatically by using the command.and it creates its own pom.xml file
+     --->maven folder structure is like this,
+
+      onlineshopping--- 1.pom.xml
+                        2.src---1.main--java--com--geestract00--app.java
+                                2.test--java--com--geestract00--apptest.java
+
+ ----->in ant
+    -->we have to write script name called build.xml  for creating folder structures 
+    --->ant folder structure is like this,
+
+             ant---1.build.xml
+                   2.sources--.java files
+                   3.build---.class files
+
+
+
+
+
+
