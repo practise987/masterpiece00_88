@@ -14,7 +14,9 @@ sol:
 
 step1: first we need to install jdk and we have to export java_home path.
 
-step2: go to  maven  downloads ,and  click on 'download apache maven'
+step2: go to  maven  downloads ,and  click on 'download apache maven' or click on this url 
+          url:https://maven.apache.org/download.cgi
+
 there it will show file links.
 for windows ,we have to go for zip file ,for linux we have to go for tar.gz file.
 
